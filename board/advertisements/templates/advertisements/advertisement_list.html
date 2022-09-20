@@ -1,0 +1,8 @@
+<html>
+    <h2>“Прошел все курсы на SkillBox. Продаю готовые домашние задания"</h2>
+    <ul>
+        {% for advertisment in transport|add:furniture|add:toys %}
+            <li>{{ advertisment }}</li>
+        {% endfor %}    
+    </ul>
+</html>

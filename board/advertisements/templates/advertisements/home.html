@@ -1,0 +1,22 @@
+<html>
+    {% csrf_token %}
+    <select name="region">
+        {% for region in regions %}
+        <option value={{ region }}>{{ region }}</option>
+        {% endfor %}
+    </select>
+    <select name="region">
+        {% for categorie in categories %}
+        <option value={{ categorie }}>{{ categorie }}</option>
+        {% endfor %}
+    </select>
+    <form method="POST">
+      <label>ввод названия объявления</label>
+      <input type="text">
+      <input type="submit" value="Найти" >
+    </form>
+    <!-- <form>
+        <label>ввод названия объявления</label>
+        <input type="text">
+      </form> -->
+</html>
